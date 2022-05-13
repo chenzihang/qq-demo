@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  display: inline-block;
+  text-align: left;
+  width: 200px;
+}
+.qq-title{
+  margin: 0px
+}
+.qq-content{
+  margin: 15px 0px;
+  display: flex;
+}
+.qq-label{
+  margin-right: 5px;
+}
+.qq-input{
+  margin-right: 2px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.qq-info{
+  display: flex;
+  background: #e5e5e5;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}
+.qq-img{
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.qq-info-content{
+  flex: 1;
+  min-width: 0px;
+}
+.qq-info-name{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+.success::before{
+  content: "√";
+  color: #05ff05;
+  font-family: cursive;
+  font-weight: bold;
+}
+.error::before{
+  content: "X";
+  color: red;
+  font-family: cursive;
+  font-weight: bold;
+}
+.loading{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 5px white solid;
+  border-left-color: #ff5500;
+  border-right-color:#0c80fe;
+  border-radius: 100%;
+  animation: loading 1s infinite linear;
+  transform-origin: 0px;
+  margin-left: 50%;
+}
+@keyframes loading{
+  from{transform: rotate(0deg) translateX(-50%)}to{transform: rotate(360deg) translateX(-50%)}
+}
